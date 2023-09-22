@@ -1,8 +1,49 @@
+body {
+  background-color: rgba(213, 225, 239, 255);
+}
+
+main {
+  text-align: center;
+  background-color: white;
+  width: 24%;
+  padding: 20px 0px;
+  border-radius: 25px;
+
+  /* Position */
+  margin: 60px auto;
+}
+.title-bold {
+  font-weight: 700;
+  font-size: 1.4em;
+  width: 70%;
+  margin: 28px auto 20px auto;
+  background-color: white;
+}
+
+.content {
+  background-color: white;
+  margin: 20px auto;
+  width: 60%;
+
+  /* Text Settings */
+  font-weight: 500;
+  font-size: 1em;
+  color: rgba(170, 174, 184, 255);
+}
 .attribution {
   font-size: 11px;
-  text-align: center;
+  background-color: white;
+  margin: 0 auto;
+  width: 40%;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Image */
+.qr-image img {
+  border-radius: 13px;
+  width: 90%;
+  margin: 0 0;
 }
