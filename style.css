@@ -1,40 +1,61 @@
+:root {
+  /* Font Families */
+  --ff-header: "Outfit", sans-serif;
+
+  /* Colors */
+  --clr-body: hsl(212, 45%, 89%);
+  --clr-main-qr-card: hsl(0, 0%, 100%);
+  --clr-content: hsl(220, 15%, 55%);
+  --clr-link: hsl(218, 44%, 22%);
+}
+
+* {
+  font-family: var(--ff-header);
+}
+
 body {
-  background-color: rgba(213, 225, 239, 255);
+  background-color: var(--clr-body);
 }
 
 main {
   text-align: center;
-  background-color: white;
-  width: 24%;
+  background-color: var(--clr-main-qr-card);
+  width: 26%;
   padding: 20px 0px;
   border-radius: 25px;
 
   /* Position */
   margin: 4rem auto;
 }
+
 .title-bold {
-  width: 70%;
-  margin: 1rem auto 20px auto;
-  font-family: "Montserrat", sans-serif;
+  width: 95%;
+  margin: 0px auto 0px auto;
+  font-weight: 700;
+  font-size: clamp(1rem, 10vw + 1rem, 1.6rem);
+}
+
+.title-bold p {
+  margin: 14px auto;
 }
 
 .content {
   margin: 20px auto;
-  width: 60%;
+  width: 80%;
 
   /* Text Settings */
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1em;
-  color: rgba(170, 174, 184, 255);
+  color: var(--clr-content);
 }
 .attribution {
   font-size: 0.8em;
   margin: 0 auto;
-  width: 40%;
+  width: 80%;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-link);
 }
 
 /* Image */
@@ -49,18 +70,19 @@ main {
     width: 50%;
   }
 
-  h1 {
-    font-size: 1.18em;
+  .title-bold {
+    margin: 0px auto;
+    width: 88%;
+    font-size: 1.5rem;
   }
 
-  .title-bold {
-    margin: 2px auto;
-    width: 80%;
+  .title-bold p {
+    margin: 8px auto 13px auto;
   }
 
   .content {
     width: 85%;
-    margin: 7px auto;
+    margin: 10px auto 11px auto;
   }
 
   .attribution {
